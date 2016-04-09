@@ -1,8 +1,9 @@
 package uk.org.winton.simpletest;
 
-
 /**
- * Created by Admin on 08/04/2016.
+ * Created by Neil Winton (neil@winton.org.uk).
+ *
+ * This code is in the public domain. Do with it as you will!
  */
 public abstract class SimpleSuite {
 
