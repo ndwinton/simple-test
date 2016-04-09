@@ -9,7 +9,7 @@ public class SimpleSuiteTest extends SimpleSuite {
     public static final int THE_ANSWER = 42;
 
     @Override
-    public void run() {
+    public void specification() {
         test("Simplest possible successful test", () -> assertThat("true is true", true));
 
         test("Calling a local method", this::localTestMethod);
@@ -37,6 +37,8 @@ public class SimpleSuiteTest extends SimpleSuite {
     }
 
     public static void main(String[] args) {
-        new SimpleSuiteTest().run();
+        SimpleSuite suite = new SimpleSuiteTest();
+        suite.run();
+        System.exit(suite.getFails() + suite.getErrors());
     }
 }
